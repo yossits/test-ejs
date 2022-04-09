@@ -10,10 +10,11 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
     crossorigin="anonymous"
     />
-    <title><%- title %> </title>
+    <title><%- locals.title %> </title>
 </head>
 <body>
     <%- include('../partials/header.ejs') %> 
+    <%- include('../partials/errorMessage.ejs') %> 
     <%- body %>
     <%- include('../partials/footer.ejs') %>
 

@@ -10,7 +10,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   
                   <li class="nav-item">
-                    <a <% if (active == '/') { %>
+                    <a <% if (locals.active == '/') { %>
                       class="nav-link active"
                       <% } else { %>
                        class="nav-link"
@@ -18,7 +18,7 @@
                   </li>
 
                   <li class="nav-item">
-                    <a <% if (active == '/training') { %>
+                    <a <% if (locals.active == '/training') { %>
                       class="nav-link active"
                       <% } else { %>
                        class="nav-link"
@@ -26,7 +26,7 @@
                   </li>
 
                   <li class="nav-item">
-                    <a <% if (active == '/about') { %>
+                    <a <% if (locals.active == '/about') { %>
                       class="nav-link active"
                       <% } else { %>
                        class="nav-link"
@@ -38,25 +38,25 @@
                       Courses
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a <% if (active == '/courses/angular10') { %>
+                      <li><a <% if (locals.active == '/courses/angular10') { %>
                         class="dropdown-item active"
                         <% } else { %>
                          class="dropdown-item"
                       <% } %> href="/courses/angular10">Angular 10</a></li>
 
-                      <li><a <% if (active == '/courses/reactjs') { %>
+                      <li><a <% if (locals.active == '/courses/reactjs') { %>
                         class="dropdown-item active"
                         <% } else { %>
                          class="dropdown-item"
                       <% } %> href="/courses/reactjs">React JS</a></li>
 
-                      <li><a <% if (active == '/courses/bootstrap5') { %>
+                      <li><a <% if (locals.active == '/courses/bootstrap5') { %>
                         class="dropdown-item active"
                         <% } else { %>
                          class="dropdown-item"
                       <% } %> href="/courses/bootstrap5">Bootstrap 5</a></li>
 
-                      <li><a <% if (active == '/courses/java14') { %>
+                      <li><a <% if (locals.active == '/courses/java14') { %>
                         class="dropdown-item active"
                         <% } else { %>
                          class="dropdown-item"
@@ -64,7 +64,7 @@
                     </ul>
 
                     <li class="nav-item">
-                        <a <% if (active == '/login') { %>
+                        <a <% if (locals.active == '/login') { %>
                           class="nav-link active"
                           <% } else { %>
                            class="nav-link"
@@ -72,7 +72,7 @@
                     </li>
 
                     <li class="nav-item">
-                      <a <% if (active == '/singup') { %>
+                      <a <% if (locals.active == '/singup') { %>
                         class="nav-link active"
                         <% } else { %>
                          class="nav-link"
@@ -80,7 +80,7 @@
                     </li>
 
                     <li class="nav-item">
-                      <a <% if (active == '/contact') { %>
+                      <a <% if (locals.active == '/contact') { %>
                         class="nav-link active"
                         <% } else { %>
                          class="nav-link"
