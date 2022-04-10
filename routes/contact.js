@@ -19,7 +19,7 @@ router.post('/', async (req,res) => {
     try {
         const newContact = await contact.save()
         res.redirect('/contact')
-        console.log(newContact.id);
+        console.log(newContact);
     } catch {
         res.render('pages/contact', {
             contact: contact,
